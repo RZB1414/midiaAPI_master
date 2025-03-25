@@ -12,8 +12,8 @@ let pdfFiles
 let videoFiles
 
 async function dbConnection() {
-    //const uri = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.eqwke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
-    const uri = `mongodb://Buiatti:Banco14R@localhost:27017/admin`
+    const uri = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.eqwke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    //const uri = `mongodb://Buiatti:Banco14R@localhost:27017/admin`
 
     try {
         await mongoose.connect(uri, {
