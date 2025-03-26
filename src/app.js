@@ -6,7 +6,8 @@ import cookieParser from 'cookie-parser'
 const app = express()
 
 app.use(cors({
-    origin: '*', // Allow all origins
+    origin: 'https://react-autenticacao-nodejs-mongodb-jwt.vercel.app', // Allow only this origin
+    //origin: '*', // Allow all origins
     credentials: true,
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
