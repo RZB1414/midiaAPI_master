@@ -8,28 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/auth/uploadVideo",
-      "dest": "src/routes/videosRouters.js",
-      "methods": ["POST"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      "bodySize": "500mb"
-    },
-    {
-      "src": "/auth/downloadVideo/:id",
-      "dest": "src/routes/videosRouters.js",
-      "methods": ["GET"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      "bodySize": "500mb"
-    },
-    {
       "src": "/(.*)",
       "dest": "/server.js",
       "headers": {
