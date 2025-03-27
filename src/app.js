@@ -10,7 +10,8 @@ app.use(cors({
     origin: '*', // Allow all origins
     credentials: true,
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    maxAge: 300
 }))
 
 app.use(cookieParser())
